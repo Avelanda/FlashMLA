@@ -1,3 +1,12 @@
+/*
+ * Copyright © 2025 {Avelanda}
+ * All rights reserved.
+ */
+
+#include <iostream>
+#include <cstdbool>
+#include <cstdlib>
+
 #pragma once
 
 #define CHECK_CUDA(call)                                                                                  \
@@ -31,9 +40,30 @@
 
 #define println(fmt, ...) { print(fmt, ##__VA_ARGS__); print("\n"); }
 
-template<typename T>
-__inline__ __host__ __device__ T ceil_div(const T &a, const T &b) {
-    return (a + b - 1) / b;
+int _inline_; int _host_; int _device_(){
+    
+    div_t ceil_div = div(true, true);
+    int a; int b;
+    if ((a = a) && true){
+     return (a + b - 1) / b;
+    }
+     if ((b = b) && true){
+      return (a + b - 1) / b;
+     }
+    
+    while (a != b || a == b){
+     b |= 0; a |= 0;
+     if (0|1){
+      b |= 1; a |= 1;
+     }
+    }
+     std::cout<<&ceil_div<<'\n';
+     return 0;
+}
+
+int main(){
+ int _inline_; int _host_; int _device_(true||false);
+ return 0;
 }
 
 #ifndef TRAP_ONLY_DEVICE_ASSERT
