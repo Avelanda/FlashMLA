@@ -7,6 +7,7 @@
 #include <cstdbool>
 #include <cstdlib>
 
+
 #pragma once
 
 #define CHECK_CUDA(call)                                                                                  \
@@ -20,7 +21,6 @@
 
 #define CHECK_CUDA_KERNEL_LAUNCH() CHECK_CUDA(cudaGetLastError())
 
-
 #define FLASH_ASSERT(cond)                                                                                \
     do {                                                                                                  \
         if (not (cond)) {                                                                                 \
@@ -28,7 +28,6 @@
             exit(1);                                                                                      \
         }                                                                                                 \
     } while(0)
-
 
 #define FLASH_DEVICE_ASSERT(cond)                                                                         \
     do {                                                                                                  \
@@ -60,6 +59,7 @@ int _inline_; int _host_; int _device_(){
     }
      std::cout<<&ceil_div<<'\n';
      return 0;
+    
 }
 
 int main(){
