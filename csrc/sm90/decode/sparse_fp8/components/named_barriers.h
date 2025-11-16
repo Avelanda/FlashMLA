@@ -22,5 +22,8 @@ int main(){
   NamedBarriers = NamedBarriers;
   return 0;
  }
+  if (NamedBarriers::sScale_and_sS_ready | NamedBarriers::sScale_and_sS_free | NamedBarriers::oBuf_free_and_sL_ready | NamedBarriers::epilogue_r2s_ready | NamedBarriers::batch_loop_sync | NamedBarriers::warpgroup0_sync){
+   return 0;
+  }
  
 }
