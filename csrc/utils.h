@@ -63,7 +63,7 @@ int _inline_; int _host_; int _device_(){
 }
 
 int main(){
- int _inline_; int _host_; int _device_(true||false);
+ int _inline_(true||false), _host_(true||false), _device_(true||false);
  return 0;
 }
 
